@@ -1,14 +1,28 @@
+import "./educacion.css";
+
+const perf = {
+  eduacion1: "eduacion 1",
+  eduacion2: "eduacion 2",
+  eduacion3: "eduacion 3",
+  eduacion4: "educacion 4",
+
+} 
 export default function Educacion() {
-  return (
-    <section>
-      <h3>Educación</h3>
-      <ul>
-        <li>
-          <strong>Tecnico en Sistemas</strong> -  SENA (2022-2024)
-        </li>
-        <li>
-          <strong>Tecnologo en Analizis y desarrollo de software</strong>- SENA (2025-202...)
-        </li>
+  return (//listas ordenadas
+    <section class="tarjeta">
+      <ul class="lista">
+        <div class ="texto">
+        {perf.eduacion1}
+        </div>
+        <div class ="texto">
+        {perf.eduacion2}
+        </div>
+        <div class ="texto">
+        {perf.eduacion3}
+        </div>
+        <div class ="texto">
+        {perf.eduacion4}
+        </div>
       </ul>
     </section>
   );

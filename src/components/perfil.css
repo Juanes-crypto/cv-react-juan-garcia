@@ -1,0 +1,16 @@
+.titulo {
+    text-align: center;
+}
+
+.texto {
+    font-size: x-large;
+}
+
+.tarjeta {
+    margin: 2rem auto;
+    width: 800px;
+    height: 400px;
+    border: 2rem solid rgb(0, 0, 0);
+    border-radius: 1.7rem;
+    background-color: rgb(0, 102, 255);
+}

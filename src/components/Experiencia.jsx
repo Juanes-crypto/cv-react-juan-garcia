@@ -1,17 +1,25 @@
+import "./experiencia.css";
+const exp = {
+  prof: "Experiencia Profesional",
+  exp1 : "experiencia 1",
+  exp2 : "experiencia 2",
+  exp3 : "experiencia 3",
+
+}
 export default function Experiencia() {
   return (
-    <section>
-      <h3>Experiencia Profesional</h3>
-      <ul>
-        <li>
-          <strong>Desarrollador Full Stack</strong> - Navisoft Gaming (2022-2024)
-        </li>
-        <li>
-          <strong>Instructor TIC</strong> - SENA (2020-2022)
-        </li>
-        <li>
-          <strong>Logistico Merkahorro S.A.S</strong> - Supermercados Merkahorro (2024-2025)
-        </li>
+    <section class = "tarjeta">
+      <h3 class = "titulo">{exp.prof}</h3>
+      <ul class = "lista">
+        
+        <div>{exp.exp1}</div>
+        
+        
+        <div>{exp.exp2}</div>
+        
+        
+        <div>{exp.exp3}</div> 
+        
       </ul>
     </section>
   );

@@ -5,9 +5,9 @@ import Experiencia from "./components/Experiencia.jsx";
 
 function App() {
   return (
-    <div>
-      <CabeceraCV />
-      <Perfil />
+<div>
+  <CabeceraCV />
+  <Perfil />
       <Educacion />
       <Experiencia />
     </div>
