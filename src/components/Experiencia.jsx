@@ -1,11 +1,57 @@
 import "./experiencia.css";
-const exp = {
-  prof: "Experiencia Profesional",
-  exp1 : "experiencia 1",
-  exp2 : "experiencia 2",
-  exp3 : "experiencia 3",
+const exp = [
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",
+  },
 
-}
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  {cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+    
+];
 export default function Experiencia() {
   return (
     <section class = "tarjeta">
