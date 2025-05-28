@@ -29,15 +29,24 @@ const educacion = [
 
 export default function Educacion() {
   if (educacion.length === 0) {
-    return <p>No hay educacion agregada.</p>;
+    return (
+      <section>
+        <h3>Educacion Profesional</h3>
+        <p>No se ha registrado educacion profesional.</p>
+      </section>
+    );
   }
   return (//renderizar un array de objetos
-    <ul>
+    <section>
+      <h3>Educacion Profesional</h3>
+
+      <ul>
       {educacion.map((educacion) => (
         <li key={educacion.id}>
           {educacion.institucion} - Curso: {educacion.nombre}
         </li>
       ))}
     </ul>
+    </section>
   );
 }

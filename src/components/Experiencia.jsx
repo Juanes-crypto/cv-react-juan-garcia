@@ -63,17 +63,24 @@ const exp = [
 
 ];
 export default function Experiencia() {
-
-    if (exp.length === 0) {
-    return <p>No hay experiencia agregada.</p>;
+      if (exp.length === 0) {
+    return (
+      <section>
+        <h3>Experiencia Profesional</h3>
+        <p>No se ha registrado experiencia profesional.</p>
+      </section>
+    );
   }
+
   return (
-    <ul>
+    <section>
+      <ul>
       {exp.map((exp) => (
         <li key={exp.id}>
             Cargo: {exp.cargo} - Empresa: {exp.empresa} - Descripcion: {exp.descripcion}
         </li>
       ))}
     </ul>
+    </section>
   );
 }
