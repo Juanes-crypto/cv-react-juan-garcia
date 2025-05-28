@@ -1,7 +1,8 @@
 Nombre del proyecto: cv-react-juan-garcia
 
-![alt text](image.png)
+![alt text](image-1.png)
 
+![alt text](image-2.png)
 Instrucciones para ejecutar el proyecto:
 1. Clonar el respositorio y ejecutarlo en vscode
 2. Usar la terminal con ctrl + ñ
