@@ -63,6 +63,10 @@ const exp = [
 
 ];
 export default function Experiencia() {
+
+    if (exp.length === 0) {
+    return <p>No hay experiencia agregada.</p>;
+  }
   return (
     <ul>
       {exp.map((exp) => (

@@ -28,6 +28,9 @@ const educacion = [
 ];
 
 export default function Educacion() {
+  if (educacion.length === 0) {
+    return <p>No hay educacion agregada.</p>;
+  }
   return (//renderizar un array de objetos
     <ul>
       {educacion.map((educacion) => (
