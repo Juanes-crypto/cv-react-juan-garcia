@@ -1,72 +1,75 @@
 import "./experiencia.css";
 const exp = [
-  {cargo: "empacador",
+  { id:1,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",
   },
 
-  {cargo: "empacador",
+  { id:2,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:3,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:4,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:5,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:6,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:7,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:8,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:9,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
 
-  {cargo: "empacador",
+  { id:10,
+    cargo: "empacador",
     empresa: "merkahorro",
     año: 2024,
     descripcion: "Empacar los mercados de las personas",},
-    
+
 ];
 export default function Experiencia() {
   return (
-    <section class = "tarjeta">
-      <h3 class = "titulo">{exp.prof}</h3>
-      <ul class = "lista">
-        
-        <div>{exp.exp1}</div>
-        
-        
-        <div>{exp.exp2}</div>
-        
-        
-        <div>{exp.exp3}</div> 
-        
-      </ul>
-    </section>
+    <ul>
+      {exp.map((exp) => (
+        <li key={exp.id}>
+            Cargo: {exp.cargo} - Empresa: {exp.empresa} - Descripcion: {exp.descripcion}
+        </li>
+      ))}
+    </ul>
   );
 }
