@@ -21,7 +21,7 @@ export default function StackTecnologias() {
   };
 
   return (
-    <section>
+    <section class="tarjeta">
       <h3>Stack de Tecnologías</h3>
       <ul>
         {tecnologias.map((tech) => (

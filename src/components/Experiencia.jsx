@@ -73,8 +73,8 @@ export default function Experiencia() {
   }
 
   return (
-    <section>
-      <ul>
+    <section class="tarjeta">
+      <ul class="lista">
       {exp.map((exp) => (
         <li key={exp.id}>
             Cargo: {exp.cargo} - Empresa: {exp.empresa} - Descripcion: {exp.descripcion}

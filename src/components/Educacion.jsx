@@ -37,7 +37,7 @@ export default function Educacion() {
     );
   }
   return (//renderizar un array de objetos
-    <section>
+    <section class="tarjeta">
       <h3>Educacion Profesional</h3>
 
       <ul>
