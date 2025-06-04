@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 const UserCard = ({ name, email, avatar }) => {
   return (
-    <div style={styles.card}>
+    <section>
+      <div style={styles.card}>
       <img src={avatar} alt={name} style={styles.avatar} />
       <h2>{name}</h2>
       <p>{email}</p>
     </div>
+    </section>
   );
 };
 

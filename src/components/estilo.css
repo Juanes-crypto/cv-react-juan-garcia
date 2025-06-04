@@ -1,0 +1,70 @@
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+}
+
+/* Cabecera */
+.cabecera {
+    width: 100%;
+    margin: 0 0 24px 0;
+    background-color: #2d3a4b;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.12);
+}
+
+/* Tarjetas generales */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    margin: 16px auto;
+    padding: 20px 24px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-width: 400px;
+}
+
+/* Efecto hover */
+.card:hover {
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+
+/* Ejemplo para títulos */
+.card h2 {
+    margin-top: 0;
+    color: #2d3a4b;
+}
+
+/* Ejemplo para botones */
+.button {
+    background: #2d3a4b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #eaff00;
+    color: #2d3a4b;
+}
+
+section {
+    background-color: #b6b6b6;
+    width: 100%;
+    text-align: center;
+}
+ul{
+    /* padding-left: 50%; */
+}
