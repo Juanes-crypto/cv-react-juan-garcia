@@ -1,63 +1,129 @@
-// src/data/cvData.js
-export const cabecera = {
-  nombre: "Nombre del Aprendiz",
-  profesion: "Desarrollador UI Frontend"
-};
-
-export const perfil = {
-  texto:
-    "Tecnólogo en Análisis y Desarrollo de Software con experiencia en desarrollo web y móvil, apasionado por la tecnología."
-};
+export const user = {
+  nombre: "Juan Esteban Garcia A.",
+  cargo : "Desarrollador Full Stack por cien",
+}
 
 export const educacion = [
-  {
-    id: 1,
-    titulo: "Ingeniería en Sistemas",
-    universidad: "Universidad Nacional",
-    periodo: "2018-2022"
-  }
-];
-
-export const experiencia = [
-  {
-    id: 1,
-    puesto: "Desarrollador Full Stack",
-    empresa: "Navisoft Gaming",
-    periodo: "2022-2024"
+  { id:1,
+    institucion: "I.E Atanasio Girardot",
+    nombre: "Programacion de Software",
+    año: 2025,
   },
-  {
-    id: 2,
-    puesto: "Instructor TIC",
-    empresa: "SENA",
-    periodo: "2020-2022"
-  }
+
+  { id:2,
+    institucion: "SENA",
+    nombre: "Analizis y desarrollo de Software",
+    año: 2025,
+  },
+
+  { id:3,
+    institucion: "Debora Arango",
+    nombre: "Psicologia",
+    año: 2025,
+  },
+
+  { id:4,
+    institucion: "Debora Arango",
+    nombre: "Artes teatrales",
+    año: 2025,
+  },
+
 ];
 
-export const stackTecnologias = [
-  { id: 1, nombre: "React", tipo: "frontend" },
-  { id: 2, nombre: "Node.js", tipo: "backend" },
-  { id: 3, nombre: "JavaScript", tipo: "frontend" },
-  { id: 4, nombre: "PostgreSQL", tipo: "base de datos" }
+export const exp = [
+  { id:1,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",
+  },
+
+  { id:2,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:3,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:4,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:5,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:6,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:7,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:8,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:9,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
+  { id:10,
+    cargo: "empacador",
+    empresa: "merkahorro",
+    año: 2024,
+    descripcion: "Empacar los mercados de las personas",},
+
 ];
 
-/* Nuevas secciones */
+export const perfil = {
+  tit : "Perfil",
+  desc : "Tecnologo en Analisis y Desarrollo de software con experiencia en desarrollo web y móvil, apasionado por la tecnología"
+}
+
+export   const tecnologias = [
+    { id: 1, nombre: "React", tipo: "frontend" },
+    { id: 2, nombre: "Node.js", tipo: "backend" },
+    { id: 3, nombre: "JavaScript", tipo: "frontend" },
+    { id: 4, nombre: "PostgreSQL", tipo: "base de datos" }
+  ];
+
+//   nuevas habilidades ++
+export const habilidades = [
+  { id: 1, nombre: "Psicoanalizis", nivel: "Avanzado" },
+  { id: 2, nombre: "Java Script", nivel: "Intermedio" },
+  { id: 3, nombre: "HTML", nivel: "Avanzado" }
+];
+
 export const proyectos = [
   {
     id: 1,
-    nombre: "Web E-commerce",
-    descripcion: "Plataforma de venta de productos en línea con carrito de compras.",
-    enlace: "https://github.com/usuario/proyecto-ecommerce"
+    nombre: "AgroAPP",
+    descripcion: "Plataforma de venta de productos agricolas y prestacion de servicios entra una comunidad agricola.",
+    enlace: "https://github.com/Juanes-crypto/agroapp"
   },
   {
     id: 2,
-    nombre: "App de Tareas",
-    descripcion: "Aplicación móvil para gestionar tareas diarias con React Native.",
-    enlace: "https://github.com/usuario/app-tareas"
+    nombre: "App de Peliculas",
+    descripcion: "Aplicación móvil para gestionar peliculas de distintos años.",
+    enlace: "https://github.com/Juanes-crypto/movie-controller"
   }
-];
-
-export const habilidades = [
-  { id: 1, nombre: "Comunicación", nivel: "Avanzado" },
-  { id: 2, nombre: "Trabajo en Equipo", nivel: "Intermedio" },
-  { id: 3, nombre: "Resolución de Problemas", nivel: "Avanzado" }
 ];
