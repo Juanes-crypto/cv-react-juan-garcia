@@ -1,17 +1,12 @@
-import "./cabecera.css";
+// src/components/CabeceraCV.jsx
+import React from "react";
 
-const user = {
-  nombre: "Juan Esteban Garcia A.",
-  cargo : "Desarrollador Full Stack por cien",
-}
-
-export default function CabeceraCV() {
+export default function CabeceraCV({ nombre, profesion }) {
   return (
     <header>
-      <div class="titulo">
-      <h1>{user.nombre}</h1>
-      <h2>{user.cargo}</h2>
-      </div>
+      <h1>{nombre}</h1>
+      <h2>{profesion}</h2>
+      <hr />
     </header>
   );
 }

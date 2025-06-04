@@ -1,19 +1,41 @@
-import CabeceraCV from "./components/CabeceraCV.jsx";
-import Perfil from "./components/Perfil.jsx";
-import Educacion from "./components/Educacion.jsx";
-import Experiencia from "./components/Experiencia.jsx";
-import StackTecnologias from "./components/StackTecnologias.jsx";
+// src/App.jsx
+import React from 'react';
+import UserCard from './components/UserCard';
 
-function App() {
+const usuarios = [
+  {
+    id: 1,
+    name: "Carlos Navia",
+    email: "carlos@example.com",
+    avatar: "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    id: 2,
+    name: "Laura Gómez",
+    email: "laura@example.com",
+    avatar: "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    id: 3,
+    name: "Julián Pérez",
+    email: "julian@example.com",
+    avatar: "https://i.pravatar.cc/150?img=3"
+  }
+];
+
+const App = () => {
   return (
-    <div>
-      <CabeceraCV />
-      <Perfil />
-      <Educacion />
-      <Experiencia />
-      <StackTecnologias />
+    <div style={{ display: 'flex', gap: '24px', padding: '20px', flexWrap: 'wrap' }}>
+      {usuarios.map(({ id, name, email, avatar }) => (
+        <UserCard
+          key={id}
+          name={name}
+          email={email}
+          avatar={avatar}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default App;

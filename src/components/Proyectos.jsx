@@ -1,28 +1,32 @@
-const proyectos = [
-  {
-    id: 1,
-    nombre: "AgroAPP",
-    descripcion: "Plataforma de venta de productos agricolas y prestacion de servicios entra una comunidad agricola.",
-    enlace: "https://github.com/Juanes-crypto/agroapp"
-  },
-  {
-    id: 2,
-    nombre: "App de Peliculas",
-    descripcion: "Aplicación móvil para gestionar peliculas de distintos años.",
-    enlace: "https://github.com/Juanes-crypto/movie-controller"
-  }
-];
+// src/components/Proyectos.jsx
+import React from "react";
 
-export default function Proyectos() {
+export default function Proyectos({ proyectos }) {
+  if (!proyectos || proyectos.length === 0) {
+    return (
+      <section>
+        <h3>Proyectos</h3>
+        <p>No se han registrado proyectos.</p>
+        <hr />
+      </section>
+    );
+  }
+
   return (
-    <section class="tarjeta">
-      <ul class="lista">
-      {proyectos.map((proyectos) => (
-        <li key={proyectos.id}>
-            Nombre: {proyectos.nombre} - Descripcion: {proyectos.descripcion} - Enlace: {proyectos.enlace}
-        </li>
-      ))}
-    </ul>
+    <section>
+      <h3>Proyectos</h3>
+      <ul>
+        {proyectos.map(({ id, nombre, descripcion, enlace }) => (
+          <li key={id} style={{ marginBottom: "8px" }}>
+            <strong>{nombre}</strong>
+            <p>{descripcion}</p>
+            <a href={enlace} target="_blank" rel="noopener noreferrer">
+              Ver repositorio
+            </a>
+          </li>
+        ))}
+      </ul>
+      <hr />
     </section>
   );
 }
