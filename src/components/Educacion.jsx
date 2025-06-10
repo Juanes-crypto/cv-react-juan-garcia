@@ -1,6 +1,6 @@
 // src/components/Educacion.jsx
 import React from "react";
-
+import "./estilo.css"
 export default function Educacion({ estudios }) {
   if (!estudios || estudios.length === 0) {
     return (
